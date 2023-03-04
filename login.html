@@ -3,7 +3,203 @@
 <head>
     
     <title>login page </title>
-    <link rel="stylesheet" href="login.css">
+    <style>
+        body {
+    align-items: center;
+   
+    background: linear-gradient(240deg,#9745e9,#ffaa00,#bd8bcd ,#c56595    100%);
+    background-size: 300%  300%;
+    animation: toggle infinite 3s ;
+    font-size: 15px;
+   
+    
+}
+@keyframes toggle{
+    from{
+        background-position: 0 60%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
+h1 {  
+    font-family: 'Courier New';
+    text-align: center ;  
+border-radius: 20px;
+   font-size: 36px;
+    backdrop-filter: blur(9px);
+-webkit-backdrop-filter: blur(9px);
+background: transparent;
+ } 
+ 
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+
+
+
+
+    .form-box{
+
+        position: relative;
+        width:400px ;
+        height: 450px;
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        background: rgba(225, 225, 255, 0.303);
+        border-radius: 70px;
+
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+    }
+    .inputbox{
+        position: relative;
+        margin: 30px 0  ;
+        width: 320;
+        border-bottom: 3px sold rgb(224, 174, 81);
+        font-size: 20px;
+        
+    }
+    .inputbox label{
+
+position: absolute;
+height 40px;
+top: 5%;
+left: 5px;
+transform: translateY(-50%);
+}
+.inputbox input{
+ 
+        position: relative;
+        width: 85% ;
+        height: 50px;
+        transform: translateY(-50%);
+       border: none;
+       outline: none;
+padding: 0 33px 0 5px ;
+        backdrop-filter: blur(9px);
+-webkit-backdrop-filter: blur(9px);
+background: rgba(44, 161, 233, 0.682);
+align-items: center;
+ }
+input:focus~label,
+input:valid~label{
+    top: -15px;
+}
+.forget{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.forget label a{
+    color: black;
+    text-decoration: none
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+   backdrop-filter: blur(8.7px);
+   -webkit-backdrop-filter: blur(8.7px);
+   background : transparent;
+    height: 40px;
+    width: 100%;
+    border-radius: 75px;
+    border: none;
+    outline: none ;
+    font-size: 20px;
+}
+button:hover{
+   
+    font-size: 25px;
+     width: 105%;
+     height: 50px;
+      border: none;
+      outline: none;
+      color: rgb(55, 27, 27);
+      background: #111;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+
+}
+button:hover::before{
+    content: '';
+    background: linear-gradient(450deg, #002bff,#e94597,#e94597 100%);
+    background-size: 300%  300%;
+    animation: toggle infinite 1s ;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 10s linear 
+    border-radius
+    
+
+
+}
+@keyframes toggle {
+    from {
+        background-position: 0 60%;
+
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
+button:active{
+    color: #000
+}
+button:active:after {
+    background: transparent;
+}
+
+button:hover:before {
+    opacity: 1;
+}
+
+.button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes button {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.register{
+    font-size: 20px;
+    text-align: center;
+    margin: 25px 0 10px ;
+}
+.register p a{
+    text-decoration: none;
+    color:black;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+    </style>
 
 </head>
 <body>
